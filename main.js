@@ -4,12 +4,14 @@ const {shell} = require('electron');
 var path = require('path')
 
 let win
-let child
+
+
 
 
 function createWindow () {
 
   // Create the browser window.
+  app.on
   win = new BrowserWindow({width: 1200, height: 900, show: false});
   var menu = Menu.buildFromTemplate([
     {
@@ -18,11 +20,30 @@ function createWindow () {
             // {label:'Adjust Notification Value'},
             // {label:'CoinMarketCap'},
              {
-                label:'Send Diagnostics',
-                 click() {
-         win.loadURL(`file://${__dirname}/assets/pages/send.html`)
-                 }
-             },
+              label:'Send Bug Report',
+              click() {
+                  win.loadURL("https://github.com/stwentynine/launcher/issues/new")
+              }
+          },
+          {
+            label:'View Latest Bug Report',
+            click() {
+                  win.loadURL("https://github.com/stwentynine/launcher/issues")
+            }
+        },
+        {
+          label:'Send Diagnostics',
+           click() {
+                  win.loadURL(`file://${__dirname}/assets/pages/send.html`)
+           }
+       },
+       // ToDO: Need to work on a back button
+    //    {
+    //     label:'⬅️  Go Back',
+    //      click() {
+    //       history.back()
+    //      }
+    //  },
             {
                 label:'Exit',
                 click() {
@@ -48,7 +69,7 @@ Menu.setApplicationMenu(menu);
     // and load the index.html of the app.
     // Load a remote URL
 
-  win.loadURL('https://vpscraft.com/panel/index.php?r=server/view&id=8649')
+  win.loadURL('https://vpscraft.com/panel/index.php?r=site/login')
  // and load the index.html of the app.
  // win.loadFile('index.html')
  // mainWindow.loadURL(`file://${__dirname}/index.html`)
