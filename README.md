@@ -1,2 +1,2 @@
-# launcher
-Studio29™ Launcher Coming Soon
+# VPS Minecraft Panel
+Studio29™ VPS Minecraft Panel Coming Soon
