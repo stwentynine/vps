@@ -1,4 +1,4 @@
-// In the main process.
+// /In the main process.
 const { app, BrowserWindow, Menu } = require('electron')
 const {shell} = require('electron');
 var path = require('path')
