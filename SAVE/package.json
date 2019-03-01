@@ -1,0 +1,22 @@
+{
+  "name": "VPS_Minecraft_Hosting_Panel",
+  "version": "1.0.0",
+  "description": "A Minecraft Hosting Solution Control Panel(VPS). This CPanel was created as a Minimal Electron JS Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/stwentynine/launcher",
+  "keywords": [
+    "Electron",
+    "vps",
+    "minecraft",
+    "hosting",
+    "control panel"
+  ],
+  "author": "Mtechnik",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.0.6"
+  }
+}
